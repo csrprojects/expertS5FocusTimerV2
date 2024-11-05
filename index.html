@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="snow">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer v2</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="app">
+        <div id="panel">
+            <section id="timer">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+            
+            <section id="controls">
+                <button data-action="toggleRunning" class="ph-bold ph-play-circle">
+                    <span class="sr-only">Iniciar contador</span>
+                </button>
+                <button data-action="toggleRunning" class="ph-bold ph-pause-circle">
+                    <span class="sr-only">Pausar contador</span>
+                </button>
+                <button data-action="reset" class="ph-bold ph-stop-circle">
+                    <span class="sr-only">Reiniciar contador</span>
+                </button>
+                <button data-action="setPlus" class="ph-bold ph-plus-circle">
+                    <span class="sr-only">Aumentar 5 minutos</span>
+                </button>
+                <button data-action="setMinus" class="ph-bold ph-minus-circle">
+                    <span class="sr-only">Diminuir 5 minutos</span>
+                </button>
+            </section>
+        </div>
+        <div id="toggle-mode">
+            <button class="btn-screen" data-theme="nature">
+                <span class="sr-only">Ativar nature mode!</span>
+                <span class="material-symbols-outlined">nature</span>
+            </button>
+            <button class="btn-screen active" data-theme="snow">
+                <span class="sr-only">Ativar snow mode!</span>
+                <span class="material-symbols-outlined">cloudy_snowing</span>
+            </button>
+            <button class="btn-screen" data-theme="store">
+                <span class="sr-only">Ativar store mode!</span>
+                <span class="material-symbols-outlined">storefront</span>
+            </button>
+            <button class="btn-screen" data-theme="fire">
+                <span class="sr-only">Ativar fogo mode!</span>
+                <span class="material-symbols-outlined">local_fire_department</span>
+            </button>
+        </div>
+            
+    </div>    
+</body>
+</html>
